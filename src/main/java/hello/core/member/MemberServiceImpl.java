@@ -11,9 +11,11 @@ public class MemberServiceImpl implements MemberService{
     public void join(Member member) {
         memberRepository.save(member);
     }
-
+    // 회원 가입 메서드
+    
     @Override
     public Member findMember(Long memberId) {
         return memberRepository.findById(memberId);
     }
+    // 회원 찾기 메서드
 }
